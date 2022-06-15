@@ -1,0 +1,29 @@
+//ユーザ情報の追加
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Hakui Koyori",
+    "email": "hakui.koyori@holo.live.jp"
+}
+
+//ユーザ情報の参照
+###
+GET http://localhost:3000/users
+
+//ユーザ情報の変更
+###
+PUT http://localhost:3000/users/2
+Content-Type: application/json
+
+{
+    "email": "amane.kanata@holo.live.jp"
+}
+
+//ユーザ情報の削除
+###
+DELETE http://localhost:3000/users/2
+
+//ユーザ情報の個別取得
+###
+GET http://localhost:3000/users/1
